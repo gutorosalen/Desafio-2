@@ -10,10 +10,10 @@
 
     --cor3: rgb(4, 79, 73);
     --cor4: rgb(212, 212, 212);
-    --size-fon: 21px;
-    --size-tex: 25px;
-    --size-s: 34px;
-    --size-t: 40px;
+    --size-fon: 15px;
+    --size-tex: 18px;
+    --size-s: 20px;
+    --size-t: 30px;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -334,6 +334,7 @@ button:focus::after {
     #sub-tex {
         display: flex;
         flex-direction: column;
+        font-size: var(--size-s);
         width: 100%;
         padding: 0;
         margin: 0;
@@ -383,8 +384,13 @@ button:focus::after {
 
     }
 
+    .button {
+        font-size: var(--size-tex);
+    }
+
     #subtex {
         padding: 0;
+        font-size: var(--size-subt);
     }
 
     .subcontainer #resp {
@@ -422,8 +428,15 @@ button:focus::after {
         flex-direction: column;
         text-align: center;
         justify-content: center;
+        font-size: var(--size-tex);
         margin-top: 0;
         padding: 0;
+    }
+
+    #pre p {
+        text-align: center;
+        font-size: var(--size-tex);
+        margin: 0;
     }
 
     .subcontainer #pre1 {
