@@ -7,6 +7,13 @@
     --size-text: 20px;
     --font-wid: bold;
     --cor2: #F2F2F2;
+
+    --cor3: rgb(4, 79, 73);
+    --cor4: rgb(212, 212, 212);
+    --size-fon: 26px;
+    --size-tex: 29px;
+    --size-s: 38px;
+    --size-t: 60px;
 }
 
 #m {
@@ -29,8 +36,21 @@
     background-color: var(--cor2);
 }
 
+#subt {
+    justify-content: center;
+}
+
+#sub-tex {
+    padding: 100px 80px 50px 0px;
+}
+
+#sub-img {
+    padding: 80px 0px 50px 50px;
+}
+
 .container {
-    margin-top: 200px;
+    padding: 80px 80px 80px 80px;
+
 }
 
 #navbarText {
@@ -42,6 +62,10 @@
     font-size: var(--size-text);
     font-family: var(--Padrao-font);
     font-weight: 400;
+}
+
+#resul {
+    padding-top: 300px;
 }
 
 div.container input {
@@ -65,7 +89,7 @@ div.container input {
     font-weight: 700;
     color: #FFFFFF;
     background: var(--cor1);
-    background: linear-gradient(90deg, rgb(47, 29, 209) 0%, rgb(7, 128, 241) 100%);
+    background: linear-gradient(90deg, rgba(12, 112, 242, 1) 0%, rgb(7, 241, 237) 100%);
     border: none;
     border-radius: 10px;
     box-shadow: 12px 12px 24px rgba(30, 2, 75, 0.64);
@@ -168,15 +192,11 @@ button:focus::after {
     text-align: center;
 }
 
-#pre {
-    margin-top: 200px;
-}
-
 #c {
     width: 100%;
     background-color: white;
     border-radius: 50px 50px 50px 50px;
-    height: 72px;
+    height: 80px;
     margin-bottom: 200px;
 }
 
@@ -184,6 +204,33 @@ button:focus::after {
     font-size: var(--size-text);
     color: black;
     text-align: center;
+}
+
+.subcontainer #resp-2 {
+    display: none;
+}
+
+.subcontainer #TR {
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    margin-right: 100px;
+}
+
+#subtex {
+    padding-right: 20px;
+}
+
+#pre {
+    margin-top: 200px;
+}
+
+#pre p {
+    margin-right: 20px;
+}
+
+.subcontainer #pre2 {
+    display: none;
 }
 
 .footer {
@@ -197,4 +244,198 @@ button:focus::after {
     font-family: var(--Padrao-font);
     font-size: var(--size-text);
     color: var(--cor2);
+}
+
+@media only screen and (max-width: 600px) {
+
+    #m {
+        width: 100%;
+        height: 250px;
+        margin: auto;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        columns: auto;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--cor3);
+    }
+
+    #Til-menu {
+        font-size: var(--size-t);
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #navbarText a {
+        font-size: var(--size-s);
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 1000;
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+
+    #subt {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .subcontainer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        justify-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #subt {
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    #sub-tex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    #sub-img {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0 20px 0;
+        padding: 0;
+    }
+
+    #for-a {
+        width: 95%;
+        margin: 0;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #text-form {
+        font-size: var(--size-tex);
+        font-weight: 400;
+
+    }
+
+    #text-form input {
+        font-size: var(--size-s);
+    }
+
+    #resul {
+        padding-top: 100px;
+    }
+
+    .subcontainer #TR {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        height: 400px;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #subtex {
+        padding: 0;
+    }
+
+    .subcontainer #resp {
+        display: none;
+    }
+
+    .subcontainer #resp-2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .subcontainer #resp-2 #a p {
+        align-items: center;
+        text-align: center;
+    }
+
+    .subcontainer #resp-2 #b p {
+        align-items: center;
+        text-align: center;
+    }
+
+    .subcontainer #pre {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #pre #sub.tex #sub.img {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .subcontainer #pre1 {
+        display: none;
+    }
+
+    .subcontainer #pre2 {
+        display: flex;
+        height: 50px;
+    }
+
+    .footer {
+        background-color: var(--cor3);
+        height: 220px;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer ul {
+        background-color: var(--cor3);
+        height: 220px;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer a {
+        font-family: var(--Padrao-font);
+        font-size: var(--size-tex);
+        color: var(--cor2);
+    }
 }

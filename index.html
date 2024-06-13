@@ -15,8 +15,8 @@
 
 <body class="mb-md-0">
     <header>
-        <nav class="navbar navbar-expand-lg bg-primary d-flexbox" id="m">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg d-flexbox" id="m">
+            <div class="container-fluid" id="m">
                 <h1 id="Til-menu">DncWeather</h1>
                 <div class="d-flex justify-content-end text-reset" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -33,17 +33,17 @@
     </header>
     <section>
         <div class="subcontainer">
-            <div class="d-flex justify-content-center p-5">
-                <div class="p-5 mt-5" id="sub.tex">Descubra Mais com Precisão:<br>
+            <div class="d-flex p-5" id="subt">
+                <div class="" id="sub-tex">Descubra Mais com Precisão:<br>
                     Previsões do Tempo e endereços<br>
                     em tempo real.
                 </div>
-                <div class="p-5 col-3" id="sub.img"><img src="cloud.svg" width="209px">
+                <div class="" id="sub-img"><img src="cloud.svg" width="209px">
                 </div>
 
             </div>
-            <div class="container mt-0 col-5 bg-white rounded-4">
-                <div class="container p-5 col-8 bg-white rounded-4">
+            <div class="container col-6 bg-white rounded-4" id="for-a">
+                <div class="bg-white" id="'for-d">
                     <form>
                         <div class="mb-3">
                             <label for="name" class="form-label" id="text-form">Primeiro Nome:</label>
@@ -81,15 +81,15 @@
                 </div>
             </div>
         </div>
-        <div class="subcontainer" style="padding-top: 300px;">
-            <div class="d-flex justify-content-center p-5">
-                <div class="p-5 mt-5" id="sub.tex">Resultado da busca por CEP:
+        <div class="subcontainer" id="resul">
+            <div clss="m-0 p-0" id="TR">
+                <div class="pt-5 mt-5" id="subtex">Resultado da busca por CEP:
                 </div>
-                <div class="p-5 col-3" id="sub.img"><img src="ponto.svg" width="209px"></div>
+                <div class="pb-5 mb-5" id="subimg"><img src="ponto.svg" width="200px"></div>
 
             </div>
             <div class="subcontainer">
-                <div class="col-10 container mt-0">
+                <div class="col-10 container mt-0" id="resp">
                     <div id="a" class="col-8 d-flex justify-content">
                         <div class="justify-content-center col-3">
                             <p>Logradouro/nome</p>
@@ -113,16 +113,56 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="d-flex justify-content-center" id="pre">
-                <div class="p-5 mt-5" id="sub.tex">Previsão do tempo na região:
+                <div class="container mt-0" id="resp-2">
+                    <div id="a" class="mt-5">
+                        <div>
+                            <p>Logradouro/</br>nome</p>
+                        </div>
+                    </div>
+                    <div id="b">
+                        <div>
+                            <p>Rua</p>
+                        </div>
+                    </div>
+                    <div id="a" class="mt-5">
+                        <div>
+                            <p>Bairro/<br>Distrito</p>
+                        </div>
+                    </div>
+                    <div id="b">
+                        <div>
+                            <p>Cidade</p>
+                        </div>
+                    </div>
+                    <div id="a" class="mt-5">
+                        <div>
+                            <p>Localidade/UF</p>
+                        </div>
+                    </div>
+                    <div id="b">
+                        <div>
+                            <p>UF</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-5 col-3" id="sub.img"><img src="cloud2.svg" width="209px"></div>
+            </div>
+            <div class="d-flex justify-content-center m-0 p-0" id="pre">
+                <div class="mt-5" id="sub.tex">
+                    <p>Previsão do tempo na região:</p>
+                </div>
+                <div id="sub.img"><img src="cloud2.svg" width="209px"></div>
             </div>
             <div class="subcontainer" style="height: 400px;">
-                <div class="col-10 container mt-0">
+                <div class="col-10 container mt-0 pt-3" id="pre1">
                     <div id="c" class="col-8 d-flex justify-content-center">
-                        <div class="col-5 justify-content-center mt-4">
+                        <div class="col-8 justify-content-center mt-4">
+                            <p>Previsão de tempo de acordo com a região: 24° C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container p-0 w-90" id="pre2">
+                    <div id="c">
+                        <div>
                             <p>Previsão de tempo de acordo com a região: 24° C</p>
                         </div>
                     </div>
@@ -131,7 +171,7 @@
         </div>
     </section>
     <footer>
-        <div class="container-fluid footer">
+        <div class="container-fluid footer w-100 m-0">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Termos de Uso | Política de Privacidade</a>
