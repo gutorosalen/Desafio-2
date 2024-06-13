@@ -10,10 +10,13 @@
 
     --cor3: rgb(4, 79, 73);
     --cor4: rgb(212, 212, 212);
-    --size-fon: 26px;
-    --size-tex: 29px;
-    --size-s: 38px;
-    --size-t: 60px;
+    --size-fon: 21px;
+    --size-tex: 25px;
+    --size-s: 34px;
+    --size-t: 40px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #m {
@@ -23,7 +26,7 @@
 }
 
 #Til-menu {
-    font-family: Inter;
+    font-family: var(--Padrao-font);
     font-size: var(--size-title);
     text-align: left;
 }
@@ -251,25 +254,40 @@ button:focus::after {
     #m {
         width: 100%;
         height: 250px;
-        margin: auto;
-        padding: auto;
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
-        columns: auto;
         align-content: center;
         justify-content: center;
         text-align: center;
         background-color: var(--cor3);
     }
 
-    #Til-menu {
+    #m #Til-menu {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
         font-size: var(--size-t);
         align-content: center;
         justify-content: center;
         text-align: center;
     }
 
+    #navbarText {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+
+
+    }
+
     #navbarText a {
+        display: flex;
+        flex-direction: column;
         font-size: var(--size-s);
         align-content: center;
         justify-content: center;
