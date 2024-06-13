@@ -350,9 +350,9 @@ button:focus::after {
     }
 
     #for-a {
-        width: 95%;
+
         margin: 0;
-        padding: 40px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -362,6 +362,7 @@ button:focus::after {
     #text-form {
         font-size: var(--size-tex);
         font-weight: 400;
+        display: flex;
 
     }
 
