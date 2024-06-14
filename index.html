@@ -44,38 +44,39 @@
             </div>
             <div class="container col-6 bg-white rounded-4" id="for-a">
                 <div class="bg-white" id="'for-d">
-                    <form>
+                    <form action="https://api.sheetmonkey.io/form/aEVxWnizL5egKdykgPWABB" method="post">
                         <div class="mb-3">
                             <label for="name" class="form-label" id="text-form">Primeiro Nome:</label>
-                            <input type="text" class="form-control bg-light text-body-tertiary"
-                                value="Insira seu primeiro nome:">
+                            <input type="text" name="Name" class="form-control bg-light text-body-tertiary"
+                                placeholder="Insira seu primeiro nome:" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label" id="text-form">E-mail:</label>
-                            <input type="email" class="form-control bg-light text-body-tertiary"
+                            <input type="email" name="Email" required class="form-control bg-light text-body-tertiary"
                                 value="Insira seu e-mail">
                         </div>
                         <div class="mb-3">
                             <label for="cep" class="form-label" id="text-form">Digite o CEP:</label>
-                            <input type="cep" class="form-control bg-light text-body-tertiary" value="Insira o CEP">
+                            <input type="text" class="form-control bg-light text-body-tertiary"
+                                placeholder="Insira o CEP" required id="cep" value="" onchange="getlatlongicep()">
                         </div>
                         <div class="mb-3">
-                            <label for="latlon" class="form-label" id="text-form">Digite a latitude e longitude para
+                            <label for="latitude" class="form-label" id="text-form">Digite a latitude e longitude para
                                 saber a
                                 previsão:</label>
                             <div class="row g-3" id="lab">
                                 <div class="col">
                                     <input type="text" class="form-control bg-light text-body-tertiary"
-                                        placeholder="Latitude">
+                                        placeholder="Latitude" required id="lati">
                                 </div>
                                 <div class="col">
                                     <input type="text" class="form-control bg-light text-body-tertiary"
-                                        placeholder="Longitude">
+                                        placeholder="Longitude" required id="longi">
                                 </div>
                             </div>
                         </div>
                         <div class="wrap" id="m-b">
-                            <button class="button">Acessar <span>Previsões</span></button>
+                            <button class="button" type="submit" onclick="getcep();tempo()">Acessar Previsões</button>
                         </div>
                     </form>
                 </div>
@@ -103,13 +104,13 @@
                     </div>
                     <div id="b" class="col-8 d-flex justify-content mb-5">
                         <div class="justify-content-center col-3">
-                            <p>Rua</p>
+                            <p id="rua">Rua</p>
                         </div>
                         <div class="justify-content-center col-3">
-                            <p>Cidade</p>
+                            <p id="cidade">Cidade</p>
                         </div>
                         <div class="justify-content-center col-3">
-                            <p placeholder="UF">UF</p>
+                            <p id="UF" placeholder="UF">UF</p>
                         </div>
                     </div>
                 </div>
@@ -155,15 +156,19 @@
             <div class="subcontainer" style="height: 400px;">
                 <div class="col-10 container mt-0 pt-3" id="pre1">
                     <div id="c" class="col-8 d-flex justify-content-center">
-                        <div class="col-8 justify-content-center mt-4">
-                            <p>Previsão de tempo de acordo com a região: 24° C</p>
+                        <div class="mt-4 d-flex">
+                            <p> Previsão de tempo de acordo com a região: </p>
+                            <p id="media">&nbsp; 24</p>
+                            <p> ºc</p>
                         </div>
                     </div>
                 </div>
                 <div class="container p-0 w-90" id="pre2">
                     <div id="c">
-                        <div>
-                            <p>Previsão de tempo de acordo com a região: 24° C</p>
+                        <div class="d-flex">
+                            <p> Previsão de tempo na região: </p>
+                            <p id="media">&nbsp; 24</p>
+                            <p> ºc</p>
                         </div>
                     </div>
                 </div>
@@ -179,6 +184,7 @@
             </ul>
         </div>
     </footer>
+    <script src="apicep.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
