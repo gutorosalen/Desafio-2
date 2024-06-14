@@ -61,7 +61,7 @@
     font-size: var(--size-text);
 }
 
-#text-form {
+.text-form {
     font-size: var(--size-text);
     font-family: var(--Padrao-font);
     font-weight: 400;
@@ -359,14 +359,14 @@ button:focus::after {
         width: 100%;
     }
 
-    #text-form {
+    .text-form {
         font-size: var(--size-tex);
         font-weight: 400;
         display: flex;
 
     }
 
-    #text-form input {
+    .text-form input {
         font-size: var(--size-s);
     }
 
