@@ -25,6 +25,9 @@ async function getcep() {
         document.getElementById('UF').innerHTML = dados.state;
         document.getElementById('cidade').innerHTML = dados.city;
 
+        document.getElementById('rua2').innerHTML = dados.address;
+        document.getElementById('cidade2').innerHTML = dados.city;
+        document.getElementById('UF2').innerHTML = dados.state;
     }
     catch (error) {
         alert("dados incorretos");
@@ -42,6 +45,7 @@ async function tempo() {
         const temp = await response.json();
         console.log(temp);
         document.getElementById('media').innerHTML = temp.current.temperature_2m;
+        document.getElementById('media1').innerHTML = temp.current.temperature_2m;
     } catch (error) {
         console.log(error)
     }
